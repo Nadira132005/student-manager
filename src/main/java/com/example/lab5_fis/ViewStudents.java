@@ -1,5 +1,5 @@
 class Students {
     public String toString() {
-        return "AHAHAHA";
+        return "Fis - Student Admin";
     }
 }
