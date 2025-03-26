@@ -14,6 +14,18 @@ public class HelloApplication extends Application {
         primaryStage.setTitle("FIS - Student Manager");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
+           if (username.equals("teacher") && password.equals("teacher")) {
+            try {
+                Stage stage = (Stage) loginMessage.getScene().getWindow();
+                Parent viewStudentsRoot = FXMLLoader.load(getClass().getResource("../fxml/view-students.fxml"));
+                Scene scene = new Scene(viewStudentsRoot, 600, 400);
+                stage.setScene(scene);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return;
+        }
     }
 
 
